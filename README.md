@@ -8,6 +8,38 @@ The Volt Guard GUI is a cross-platform PySide6 desktop application for monitorin
 - PySide6
 - desktop
 - application
+- Power
+- mode
+- selector
+- (15W-60W)
+- Apply
+- power
+- mode
+- with
+- one
+- click
+- Real-time
+- temperature
+- display
+- Real-time
+- voltage
+- display
+- Real-time
+- current
+- display
+- Real-time
+- power
+- consumption
+- display
+- Automatic
+- 3-second
+- refresh
+- gRPC
+- client
+- with
+- auto-reconnect
+- MIT
+- licensed
 
 ## Quick Start
 
@@ -20,16 +52,6 @@ The Volt Guard GUI is a cross-platform PySide6 desktop application for monitorin
 make all      # Build all targets
 make test     # Run tests
 make clean    # Clean build artifacts
-```
-
-## Architecture
-
-```
-Driver (kernel module) ──► Server (gRPC) ──► GUI (PySide6)
-     │                        │                    │
-     ▼                        ▼                    ▼
-  Hardware              C++ Service           Desktop App
-  Access                Layer                 (macOS/Linux/Win)
 ```
 
 ## Repository Structure
@@ -47,10 +69,10 @@ Driver (kernel module) ──► Server (gRPC) ──► GUI (PySide6)
 ## Project Status
 
 **Version:** 0.1.0 — Initial release
-**License:** Power mode selector (15W–60W)
+**License:** MIT
 **Audit Score:** 90/100
 
-## 🌐 Ecosystem
+## Ecosystem
 
 This project is part of the [Jetson AGX Orin Capability Showcase](https://github.com/soccentric-jetson-oss/soccentric-jetson-oss) — five open-source projects demonstrating full exploitation of NVIDIA's flagship edge AI platform.
 
@@ -60,4 +82,4 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines. All contributions welcome
 
 ## License
 
-Power mode selector (15W–60W). See [LICENSE](LICENSE) for details.
+MIT. See [LICENSE](LICENSE) for details.
