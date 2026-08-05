@@ -1,0 +1,11 @@
+syntax = "proto3"; package voltguard;
+service VoltGuard {
+    rpc SetPowerMode(PowerMode) returns (ModeResponse);
+    rpc GetPowerMode(Empty) returns (PowerMode);
+    rpc GetSensors(Empty) returns (SensorData);
+    rpc HealthCheck(Empty) returns (HealthResponse);
+}
+message PowerMode { uint32 mode=1; uint32 power_mw=2; }
+message ModeResponse { bool success=1; string error=2; }
+message SensorData { int32 temp_celsius=1; uint32 voltage_mv=2; uint32 current_ma=3; uint32 power_mw=4; }
+message Empty {} message HealthResponse { string status=1; string version=2; }
