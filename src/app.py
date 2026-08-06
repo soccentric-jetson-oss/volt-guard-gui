@@ -48,7 +48,7 @@ class VoltGuardApp(QMainWindow):
 
         # Sensor display
         self.sensors_label = QLabel("Temp: -- | Voltage: -- | Current: -- | Power: --")
-        self.sensors_label.setStyleSheet("color:#888; font-size:14px; padding:10px;")
+        self.sensors_label.setStyleSheet("color:#616161; font-size:14px; padding:10px;")
         layout.addWidget(self.sensors_label)
         layout.addStretch()
 
